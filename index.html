@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Previsão do Tempo</h1>
+        <div class="search-div">
+            <input class="city-input" type="text" placeholder="Digite o nome da cidade">
+            <button class="search-button" onclick="buttonClick()">
+                <img src="./assets/find.svg" alt="Icone de uma lupa">
+            </button>
+        </div>
+        <div class="error">
+            <p>Cidade não localizada, por favor, verifique se o nome está correto e tente novamente.</p>
+        </div>
+        <div class="climate-characteristics">
+            <h2 class="city"></h2>
+
+            <p class="temperature"></p>
+
+            <div class="weather-condition">
+                <img class="img-forecast" src="" alt="">
+                <p class="text-forecast"></p>
+            </div>
+            
+            <p class="max"></p>
+            <p class="min"></p>  
+
+            <p class="humidity"></p>
+        </div>
+    </div>
+</body>
+
+</html>
